@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zomato</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    </head>
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="first">
+                <div class="brand box">
+                    <h1>Zomato</h1>
+                </div>
+                <div class="search box">
+                    <form>
+                        <input type="text" class="searching" placeholder="Search the places,cusinis and dishes">
+                    </form>
+                </div>
+                <div class="log box">
+                    <button>Log in</button>
+                </div>
+                <div class="sign box">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <div class="second">
+                <div class="dining box">
+                    <div class="images">
+                        <!-- <img src="" alt="dining img"> -->
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="dine">
+                        <h2>Dining Out</h2>
+                    </div>
+                </div>
+                <div class="delivery box">
+                    <div class="images">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="dine">
+                        <h2>Delivery</h2>
+                    </div>
+                </div>
+                <div class="nightlife box">
+                    <div class="images">
+                        <i class="fa-solid fa-cloud-moon-rain"></i>
+                    </div>
+                    <div class="dine">
+                        <h2>NightLife</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <h2 class="third_h2">Collections</h2>
+                <p class="desc">Explore curated lists of top restaurants,cafes,pubs and bars, based on treads <i class="fa-solid fa-caret-right"></i></p>
+                <!-- 1 -->
+                <div class="coll">
+
+                    <img src="https://images.unsplash.com/photo-1711159956294-f5f39a31d5d4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGluaW5nJTIwcGxhY2VzfGVufDB8fDB8fHww" alt="collection img">
+                    <p class="line_first">Top Trending Spots</p>
+                    <p class="line_second">38 Places>></p>
+
+                </div>
+                <!-- 2 -->
+                <div class="coll">
+                    <img src="https://plus.unsplash.com/premium_photo-1673984588308-4cf51238779e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGluaW5nJTIwcGxhY2VzfGVufDB8fDB8fHww" alt="collection img">
+                    <p class="line_first">Best Insta-worthy Places</p>
+                    <p class="line_second">47 Places>></p>
+                </div>
+                <!-- 3 -->
+                <div class="coll">
+                    <img src="https://images.unsplash.com/photo-1517957096399-3a4e3d34d95e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGluaW5nJTIwcGxhY2VzfGVufDB8fDB8fHww" alt="collection img">
+                    <p class="line_first">Hauting Halloween Parties</p>
+                    <p class="line_second">12 Places>></p>
+                </div>
+                <!-- 4 -->
+                <div class="coll">
+                    <img src="https://images.unsplash.com/photo-1723547604779-ff84f76b5cf8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGRpbmluZyUyMHBsYWNlc3xlbnwwfHwwfHx8MA%3D%3D" alt="collection img">
+                    <p class="line_first">Dazzling rooftop Places</p>
+                    <p class="line_second">24 Places>></p>
+                </div>
+                <button>Load More</button>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <main>
+        <!-- 1 -->
+        <div class="card">
+            <!-- image -->
+            <div class="image">
+                <img src="data:image/jpeg;base64,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"
+                    alt="image of resturant" />
+                <p>Flat 25% OFF</p>
+            </div>
+            <!-- resturant -->
+            <div class="resturant">
+                <div class="resturant_name box">
+                    <p>The Desserts Bells & Kitchens</p>
+                </div>
+                <div class="rating box">
+                    <p>4.2&#9733;</p>
+                </div>
+            </div>
+            <!-- food info -->
+            <div class="food">
+                <div class="food_name box">
+                    <p>Burgers,Fries,Tacos</p>
+                </div>
+                <div class="price box">
+                    <p>&#8377;2800 for two</p>
+                </div>
+            </div>
+            <!-- location -->
+            <div class="location">
+                <div class="place box">
+                    <p>Middle circle,SPM</p>
+                </div>
+                <div class="dist box">
+                    <p>1.5 Km</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="card">
+            <!-- image -->
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image of resturant" />
+                <p>Flat 14% OFF</p>
+            </div>
+            <!-- resturant -->
+            <div class="resturant">
+                <div class="resturant_name box">
+                    <p>Dunkens Plates</p>
+                </div>
+                <div class="rating box">
+                    <p>3.2&#9733;</p>
+                </div>
+            </div>
+            <!-- food info -->
+            <div class="food">
+                <div class="food_name box">
+                    <p>Mexican, Italian ,Chinese</p>
+                </div>
+                <div class="price box">
+                    <p>&#8377;9800 for two</p>
+                </div>
+            </div>
+            <!-- location -->
+            <div class="location">
+                <div class="place box">
+                    <p>78, East highway</p>
+                </div>
+                <div class="dist box">
+                    <p>4.5 Km</p>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="card">
+            <!-- image -->
+            <div class="image">
+                <img src="https://plus.unsplash.com/premium_photo-1739502932120-36ff49744d1e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZhc3QlMjBmb29kJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D" alt="image of resturant" />
+                <p>Flat 35% OFF</p>
+            </div>
+            <!-- resturant -->
+            <div class="resturant">
+                <div class="resturant_name box">
+                    <p>The Hotdog</p>
+                </div>
+                <div class="rating box">
+                    <p>4.1&#9733;</p>
+                </div>
+            </div>
+            <!-- food info -->
+            <div class="food">
+                <div class="food_name box">
+                    <p>Amercian Breakfast,Chinese</p>
+                </div>
+                <div class="price box">
+                    <p>&#8377;400 for one</p>
+                </div>
+            </div>
+            <!-- location -->
+            <div class="location">
+                <div class="place box">
+                    <p>Central Park, East</p>
+                </div>
+                <div class="dist box">
+                    <p>3.5 Km</p>
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="card">
+            <!-- image -->
+            <div class="image">
+                <img src="https://plus.unsplash.com/premium_photo-1664475361087-e2bea16ee3bc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGZhc3QlMjBmb29kJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D" alt="image of resturant" />
+                <p>Flat 5% OFF</p>
+            </div>
+            <!-- resturant -->
+            <div class="resturant">
+                <div class="resturant_name box">
+                    <p>Barbeque Nation</p>
+                </div>
+                <div class="rating box">
+                    <p>4.9&#9733;</p>
+                </div>
+            </div>
+            <!-- food info -->
+            <div class="food">
+                <div class="food_name box">
+                    <p>Mexican, Indoniese ,Chinese</p>
+                </div>
+                <div class="price box">
+                    <p>&#8377;3800 for one</p>
+                </div>
+            </div>
+            <!-- location -->
+            <div class="location">
+                <div class="place box">
+                    <p>Middle carbort,78 West</p>
+                </div>
+                <div class="dist box">
+                    <p>6.5 Km</p>
+                </div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="card">
+            <!-- image -->
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1698004760605-9f5f454d9bf9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzdCUyMGZvb2QlMjByZXN0YXVyYW50fGVufDB8fDB8fHww" alt="image of resturant" />
+                <p>Flat 15% OFF</p>
+            </div>
+            <!-- resturant -->
+            <div class="resturant">
+                <div class="resturant_name box">
+                    <p>The Dining Hall</p>
+                </div>
+                <div class="rating box">
+                    <p>5.2&#9733;</p>
+                </div>
+            </div>
+            <!-- food info -->
+            <div class="food">
+                <div class="food_name box">
+                    <p>Italian ,Chinese</p>
+                </div>
+                <div class="price box">
+                    <p>&#8377;7500 for two</p>
+                </div>
+            </div>
+            <!-- location -->
+            <div class="location">
+                <div class="place box">
+                    <p>Blue sea Valleys,78</p>
+                </div>
+                <div class="dist box">
+                    <p>2.5 Km</p>
+                </div>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="card">
+            <!-- image -->
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1716068107435-165b8067d96e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzdCUyMGZvb2QlMjByZXN0YXVyYW50fGVufDB8fDB8fHww" alt="image of resturant" />
+                <p>Flat 21% OFF</p>
+            </div>
+            <!-- resturant -->
+            <div class="resturant">
+                <div class="resturant_name box">
+                    <p>Cafe Sea</p>
+                </div>
+                <div class="rating box">
+                    <p>4.8&#9733;</p>
+                </div>
+            </div>
+            <!-- food info -->
+            <div class="food">
+                <div class="food_name box">
+                    <p>Matcha Pastery,Pancakes</p>
+                </div>
+                <div class="price box">
+                    <p>&#8377;1800 for two</p>
+                </div>
+            </div>
+            <!-- location -->
+            <div class="location">
+                <div class="place box">
+                    <p>Middle circle,SPM</p>
+                </div>
+                <div class="dist box">
+                    <p>1.5 Km</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
